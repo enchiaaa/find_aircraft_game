@@ -9,6 +9,7 @@ https://findaircraft-9f818.web.app/
 * 玩家需在畫面中找出 3 個飛機機頭才能過關
 
 ### 專案特色
+* 使用 React 建構前端架構
 * 採用 RWD 響應式版型，支援電腦與行動裝置操作
 * 使用 Firebase Hosting 進行專案部署
 * 使用 Firestore Database 建立排行榜系統，即時記錄玩家成績
