@@ -1,13 +1,11 @@
-import GameBoard from "./components/GameBoard/GameBoard";
-import NavigationBar from "./components/NavigationBar/NavigationBar";
-import RuleBoard from "./components/RuleBoard/RuleBoard";
+import GameBoard from "./components/game/GameBoard/GameBoard";
+import RuleBoard from "./components/game/RuleBoard/RuleBoard";
 import "./App.scss"
-import RecordBoard from "./components/RecordBoard/RecordBoard";
 
 function App() {
   return (
     <div className="app">
-      <NavigationBar />
+      <span className="title">尋找飛機頭</span>
       <div className="content">
         <div className="left">
           <GameBoard/>
@@ -16,7 +14,6 @@ function App() {
           <RuleBoard/>
         </div>
       </div>
-      
     </div>
   );
 }

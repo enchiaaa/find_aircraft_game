@@ -1,9 +1,25 @@
-.app{
+@import "./style.scss";
 
+.app{
     display: flex;
     flex-direction: column;
     padding: 30px 150px;
     gap: 30px;
+
+    .title{
+        color: $color-text-dark;
+        font-size: larger;
+        font-weight: bold;
+        width: 100%;
+        text-align: center;
+
+        background-color: $color-bg-pink;
+        padding-block: 8px;
+        border-radius: $radius-md;
+
+        -webkit-box-shadow: 4px 4px 4px 0px rgba(105,73,73,0.15); 
+        box-shadow: 4px 4px 4px 0px rgba(105,73,73,0.15);
+    }
 
     .content{
         display: flex;
@@ -30,6 +46,19 @@
         }
     }
 
+    .backdrop{
+        display: flex;
+        position: fixed;
+        z-index: 1;
+        background-color: rgba(0, 0, 0, 0.5);
+        width: 100vw;
+        height: 100vh;
+        top: 0;
+        left: 0;
+        align-items: center;
+        justify-content: center;
+    }
+
     @media (max-width: 960px){
         padding: 30px 80px;
     }
@@ -37,6 +66,4 @@
     @media (max-width: 480px){
         padding: 30px 20px;
     }
-
-
 }
